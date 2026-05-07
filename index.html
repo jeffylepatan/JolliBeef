@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jollibeef - Ang Bagong Bida ng Hapag-Kainan!</title>
+
+  <!-- Tailwind CSS for styling -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts for a friendly, approachable look -->
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'jolli-red': '#E41E26',
+            'jolli-red-dark': '#B31219',
+            'jolli-yellow': '#FDBB11',
+            'jolli-yellow-light': '#FEEBB8',
+            'jolli-white': '#FFFFFF',
+          },
+          fontFamily: {
+            'heading': ['"Fredoka One"', 'cursive'],
+            'body': ['Nunito', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Nunito', sans-serif;
+    }
+
+    h1,
+    h2,
+    h3,
+    .font-heading {
+      font-family: '"Fredoka One"', cursive;
+      font-weight: normal;
+    }
+
+    /* Subtle background pattern */
+    .bg-pattern {
+      background-color: #fdfbf7;
+      background-image: radial-gradient(#FEEBB8 1px, transparent 1px);
+      background-size: 20px 20px;
+    }
+  </style>
+</head>
+
+<body class="bg-pattern text-gray-800 antialiased flex flex-col min-h-screen">
+
+  <!-- Navbar -->
+  <nav class="bg-jolli-red text-white py-4 px-6 shadow-md sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto flex justify-between items-center">
+      <div class="flex items-center gap-2">
+        <!-- Using an emoji as a fun, fast-loading logo placeholder -->
+        <img alt="JolliBeef Logo" class="h-20 w-20 object-contain bg-white rounded-full p-1 shadow-sm" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAFB0ZeYw8Mc4EjlN3wXipxPMr2oqob5-lZghSPv9zoNXfpKgp1oTfxlb4B7pafz9I8-CqnqlQP0yry2T0JyfyAhsWps-bFinSCtu3ZQvnxg5FWxQlvjLkGBaibQMwFD_RSgypUm49BXUDAKmAd2MnYt3w1sW2jNTrA8UIBG_5ksjAlTw8yiRNcpHqcUo/s320/Logo01.png">
+        <span class="font-heading text-4xl tracking-wide text-jolli-white">JolliBeef</span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="flex-grow flex items-center pt-12 pb-20 px-6">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <!-- Text Content -->
+      <div class="space-y-6 text-center md:text-left">
+        <h1 class="text-5xl md:text-6xl text-jolli-red leading-tight drop-shadow-sm">
+          Ang Bagong Bida ng Hapag-Kainan!
+        </h1>
+        <p class="text-lg md:text-xl text-gray-700 font-semibold">
+          Premium quality beef parts para sa inyong paboritong Nilaga, Sinigang, at Kare-Kare. Sariwa, malinis, at
+          abot-kaya - direkta sa inyong kusina.
+        </p>
+        <div class="pt-6">
+          <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+            <a href="#contact" class="bg-jolli-red hover:bg-jolli-red-dark text-white font-bold py-3 px-8 rounded-full transition-all transform hover:scale-105 shadow-md flex items-center justify-center gap-2">
+              <i data-lucide="phone" class="w-5 h-5"></i>
+              <span>Umorder Ngayon</span>
+            </a>
+            <a href="https://www.facebook.com/jollibeefph" target="_blank" rel="noopener noreferrer" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transition-all transform hover:scale-105 shadow-md flex items-center justify-center gap-2">
+              <i data-lucide="message-circle" class="w-5 h-5"></i>
+              <span>Message Us</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Image/Visual Content -->
+      <div class="relative flex justify-center">
+        <!-- Decorative background blob -->
+        <div class="absolute inset-0 bg-jolli-yellow rounded-full blur-3xl opacity-30 transform scale-110"></div>
+
+        <div class="relative bg-white p-6 rounded-3xl shadow-xl border-4 border-jolli-yellow w-full max-w-md transform rotate-2 hover:rotate-0 transition-transform duration-300">
+          <div class="text-center mb-6">
+            <h3 class="font-heading text-2xl text-jolli-red">Mga Produkto Namin</h3>
+          </div>
+
+          <div class="grid grid-cols-2 gap-4">
+            <!-- Part 1 -->
+            <div class="bg-white p-2 rounded-2xl text-center border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+              <img alt="Bulalo Meat" class="w-full h-28 object-cover rounded-xl mb-2" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgs9eUERi_4rAaHx9QXDgf9l6-Mft7Th3em_3JD0-qiQTsdmDZr0Wz5EHaRq1H6z4BmwaIjgutrvsyyYV48VmYLzcvlwVucISjcigppaPMcuszb8vHT8qFfqFkY36El57g-ntzJMlpdJMizXWDp3t7pUlpQXLTUvUjY2RQojO8EpMglXvWGUYuVIoNPips/s1946/Beef_Bulalo_Shank_2.png">
+              <h4 class="font-bold text-gray-800">Bulalo</h4>
+              <p class="text-xs text-gray-600 mt-1">Buto-buto / Laman</p>
+            </div>
+            <!-- Part 2 -->
+            <div class="bg-white p-2 rounded-2xl text-center border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+              <img alt="Puro Laman" class="w-full h-28 object-cover rounded-xl mb-2" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEicubTz4sDrDWUjVbDdJ9MfZCUjXdjnNvECob6xN0SDpxBeCqMqAwC3nTCe1ywdp27yjgpop3NEPMg12s7tPoekk_HxC7PEbHAUqBntYVvtIbenk1Uk79vwWZAF2R08AQhoSZDIhZVCPDDmcZkkj9zVLZlwk_hPW7mEpMw9zY4YyAz4DvSt2euGDDKWE9w/s1600/How-to-Slice-Meat-Thinly-step-by-step-37-I.jpg">
+              <h4 class="font-bold text-gray-800">Puro Laman</h4>
+              <p class="text-xs text-gray-600 mt-1">Pang-Bistek Tagalog</p>
+            </div>
+            <!-- Part 3 -->
+            <div class="bg-white p-2 rounded-2xl text-center border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+              <img alt="Tadyang" class="w-full h-28 object-cover rounded-xl mb-2" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZFHJ69sidF57tipbzXKh0_S3nnKW-wcv6HT2dLo1QYcJe20UYsiz_W6kqwnn1mT_K-ZxnZX0cRC_WP85r1DlRavNpYpJg8R_vf2n3liSUarWzdv4-QcNDZigFaPIIgOZrH7YuANAEdGSBeCqyb2tnl7-XcSD-UHauux0uXhpFvAgBGlNPFWi-M3UELEA/s320/types_of_beef_ribs_1200x.jpg">
+              <h4 class="font-bold text-gray-800">Tadyang (Ribs)</h4>
+              <p class="text-xs text-gray-600 mt-1">Asim-kilig Sinigang</p>
+            </div>
+            <!-- Part 4 -->
+            <div class="bg-white p-2 rounded-2xl text-center border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+              <img alt="Tuwalya" class="w-full h-28 object-cover rounded-xl mb-2" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiR1tVmxudKOuTf39u4qJfk7CX10I3Lp_PKYVHtfVuABz-99HkIColU7ngWBh5cttNjUFvd3tnt43kghnc257JYIRlxSvgRVBAeUk2s37Q-BV6K4Wgx5_Edgadp7B9MwOiOYxo6jzvPDhw8Xy_X0xH-JeI423Y-kI8aPKD1tdxr8qOXfDJcVLJVGzGmAIE/s1000/ox_tripe_-_gallery_images_03_-_1200x900.jpg">
+              <h4 class="font-bold text-gray-800">Tuwalya</h4>
+              <p class="text-xs text-gray-600 mt-1">Para sa Kare-Kare</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Why Choose Us Section -->
+  <section class="bg-white py-16 px-6 border-t-4 border-jolli-yellow-light">
+    <div class="max-w-5xl mx-auto text-center">
+      <h2 class="text-3xl md:text-4xl text-jolli-red mb-12">Bakit sa Jollibeef?</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="flex flex-col items-center">
+          <div class="bg-jolli-yellow text-white p-4 rounded-full mb-4 shadow-md">
+            <i data-lucide="check-circle-2" class="w-8 h-8"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-2">Siguradong Sariwa</h3>
+          <p class="text-gray-600">Laging bago ang supply. Hindi frozen ng ilang buwan, kaya sigurado ang lasa ng sabaw niyo.</p>
+        </div>
+
+        <div class="flex flex-col items-center">
+          <div class="bg-jolli-yellow text-white p-4 rounded-full mb-4 shadow-md">
+            <i data-lucide="shield-check" class="w-8 h-8"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-2">Malinis ang Pagkahiwa</h3>
+          <p class="text-gray-600">Properly handled at hiniwa nang maayos para ready-to-cook na pagdating sa kusina mo.</p>
+        </div>
+
+        <div class="flex flex-col items-center">
+          <div class="bg-jolli-yellow text-white p-4 rounded-full mb-4 shadow-md">
+            <i data-lucide="wallet" class="w-8 h-8"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-2">Pang-Masa ang Presyo</h3>
+          <p class="text-gray-600">Quality meat hindi kailangan maging sobrang mahal. Presyong pang-araw-araw na ulam!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="bg-jolli-yellow py-16 px-6" id="contact">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl md:text-4xl text-jolli-red mb-6">Handa Na Umorder?</h2>
+      <p class="text-lg text-gray-800 mb-8">Piliin lang ang gusto ninyong parts at kontakin kami! We deliver everyday para laging sariwa.</p>
+
+      <div class="flex flex-col md:flex-row justify-center items-center gap-6">
+        <div class="bg-white p-6 rounded-2xl shadow-md w-full md:w-1/2 flex items-center gap-4 hover:shadow-lg transition-shadow">
+          <div class="bg-jolli-red text-white p-4 rounded-full">
+            <i data-lucide="phone" class="w-6 h-6"></i>
+          </div>
+          <div class="text-left">
+            <p class="text-sm text-gray-500 font-bold uppercase">Call or Text Us</p>
+            <p class="text-xl font-bold text-gray-800">0912 345 6789</p>
+          </div>
+        </div>
+
+        <a href="https://m.me/JolliBeefPH" target="_blank" rel="noopener noreferrer" class="group bg-white p-6 rounded-2xl shadow-md w-full md:w-1/2 flex items-center gap-4 hover:shadow-lg transition-shadow">
+          <div class="bg-blue-600 text-white p-4 rounded-full">
+            <i data-lucide="message-circle" class="w-6 h-6"></i>
+          </div>
+          <div class="text-left">
+            <p class="text-sm text-gray-500 font-bold uppercase">Message on FB</p>
+            <p class="text-xl font-bold text-gray-800 group-hover:text-blue-600 transition-colors">m.me/JolliBeefPH</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer / Social Proof placeholder -->
+  <footer class="bg-gray-900 text-white py-8 text-center px-4">
+    <div class="max-w-4xl mx-auto flex flex-col items-center">
+      <span class="font-heading text-2xl text-jolli-yellow mb-2">Jollibeef</span>
+      <p class="text-gray-400 text-sm mb-6">Your friendly neighborhood beef supplier.</p>
+
+      <p class="text-gray-500 text-xs mt-4">
+        &copy; <span id="year"></span> Jollibeef. All rights reserved. <br>
+        Vizal Sto. Cristo Candaba Pampanga
+      </p>
+    </div>
+  </footer>
+
+  <!-- Script for interactivity -->
+  <script>
+    // Initialize Lucide icons
+    lucide.createIcons();
+
+    // Set current year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
